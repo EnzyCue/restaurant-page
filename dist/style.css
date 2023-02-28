@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+li {
+    list-style-type: none
+}
 @font-face {
     font-family: "cookie";
     src: url(Cookie-Regular.ttf);
@@ -35,6 +38,17 @@ body {
     flex-direction: column;
     gap: 0.5rem;
     padding: 1rem 0 1rem 0;
+}
+.heading button {
+    background-color: #e8b57200;
+    font-size: 20px;
+    margin-bottom: 0.5rem ;
+    border: none;
+}
+.heading .selected-button{
+    box-sizing: border-box;
+    border-bottom: 3px solid black;
+    margin-bottom: 2px;
 }
 .heading h2{
     font-weight: 900;
@@ -75,6 +89,8 @@ body {
     font-family: "apple";
 }
 
+
+/* menu page */
 .menu {
     display: grid;
     margin-top: 2rem;
@@ -93,6 +109,8 @@ body {
     border-radius: 15px;
     background-color: #e8b572a1;
     font-family: "apple";
+    border: 4px solid black;
+    
 }
 .menu .card p {
     font-family: "cookie";
@@ -100,7 +118,61 @@ body {
     margin-top: 1.5rem;
 }
 
+
+/* contact page */
     
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 6rem;
+}
+.contact p,
+.contact li{
+    font-weight: 400;
+    font-size: 20px;
+}
+.contact > div{
+    padding: 3rem;
+    box-shadow: 3px 3px 8px -3px #888;
+    border-radius: 15px;
+    background-color: #e8b572a1;
+    border: 4px solid black;
+}
+.contact h6{
+    font-weight: 600;
+    font-size: 45px;
+    font-family: 'cookie';
+}
+.contact .left-panel{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+.contact .left-panel img{
+    border: 4px solid black;
+    border-radius: 15px;
+
+}
+.contact .left-panel .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+}
+.contact .right-panel{
+    padding: 1rem;
+    box-shadow: 3px 3px 8px -3px #888;
+    border-radius: 15px;
+    background-color: #e8b572a1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 6rem;
+}
+
 
 
 /* .description {

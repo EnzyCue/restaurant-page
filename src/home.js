@@ -13,19 +13,25 @@ function heading(container) {
 
     const directory = document.createElement('div');
     directory.classList.add('directory');
-    heading.appendChild(directory);
+    
 
-    const menuDirectory = document.createElement('div');
+    const menuDirectory = document.createElement('button');
     menuDirectory.textContent = 'Menu';
+    menuDirectory.classList.add('menu-button');
     directory.appendChild(menuDirectory);
-
-    const homeDirectory = document.createElement('div');
+    
+    const homeDirectory = document.createElement('button');
     homeDirectory.textContent = 'Home';
+    homeDirectory.classList.add('home-button');
+    homeDirectory.classList.add('selected-button');
     directory.appendChild(homeDirectory);
-
-    const contactDirectory = document.createElement('div');
+    
+    const contactDirectory = document.createElement('button');
     contactDirectory.textContent = 'Contact';
+    contactDirectory.classList.add('contact-button');
     directory.appendChild(contactDirectory);
+
+    heading.appendChild(directory);
 
     container.appendChild(heading);
 

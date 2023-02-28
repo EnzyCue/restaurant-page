@@ -82,7 +82,6 @@ function generateRightPanel(){
 
     rightPanel.appendChild(rightPanelAddress);
 
-
     const rightPanelHours = document.createElement('div');
     rightPanelHours.classList.add('hours');
     
@@ -90,11 +89,23 @@ function generateRightPanel(){
     hoursHeading.textContent = 'Business Hours: ';
     rightPanelHours.appendChild(hoursHeading);
     
-    const hours = document.createElement('p');
-    hours.textContent = 'Monday - Friday: 9am - 6pm\nSaturday: 10am - 4pm\nSunday: Closed';
-    rightPanelHours.appendChild(hours);
+    const hoursList = document.createElement('ul');
     
+    const mondayFriday = document.createElement('li');
+    mondayFriday.textContent = 'Monday - Friday: 9am - 6pm';
+    hoursList.appendChild(mondayFriday);
+    
+    const saturday = document.createElement('li');
+    saturday.textContent = 'Saturday: 10am - 4pm';
+    hoursList.appendChild(saturday);
+    
+    const sunday = document.createElement('li');
+    sunday.textContent = 'Sunday: Closed';
+    hoursList.appendChild(sunday);
+    
+    rightPanelHours.appendChild(hoursList);
     rightPanel.appendChild(rightPanelHours);
+    
 
     
     return rightPanel;
